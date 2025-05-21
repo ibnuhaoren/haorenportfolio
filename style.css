@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: ivory;
+    color: #333;
+}
+
+nav {
+    background: blanchedalmond;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 50px auto;
+    border-width: 10px;
+    border-style: groove;
+    border-color: cyan;
+}
+
+.hero-title{
+     max-width: 850px;
+    background: burlywood;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10%;
+    padding: 20px 10px;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about,
+#projects,
+#contact {
+    background: burlywood;
+    margin-top: 50px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    margin-top: 10%;
+}
+
+/* media query buat layar ponsel */
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    #hero {
+        padding: 10px 5px;
+        margin-bottom: 20px;
+    }
+
+    #hero img {
+        width: 80px;
+        height: 80px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .hero-title {
+        max-width: 95%;
+        padding: 8px 4px;
+        border-radius: 10px;
+    }
+
+    .hero-title h1 {
+        font-size: 1.1em;
+        margin-bottom: 4px;
+    }
+
+    .hero-title p {
+        font-size: 0.9em;
+        line-height: 1.3;
+        margin-top: 0;
+    }
+
+    section {
+        padding: 10px 3px;
+        max-width: 99%;
+        margin: 0 auto 15px auto;
+    }
+
+    #about,
+    #projects,
+    #contact {
+        padding: 10px 3px;
+        max-width: 99%;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+
+    #about p {
+        font-size: 0.95em;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    footer {
+        margin-top: 15px;
+        padding: 8px;
+        font-size: 0.9em;
+    }
+}
